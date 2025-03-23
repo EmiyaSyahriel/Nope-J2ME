@@ -19,12 +19,12 @@ as the target bytecode is already deprecated by Gradle), in combination with Loc
 This is just a bare J2ME app, no Proguard shrinking, obfuscation or anything.
 
 ### Influenced by
-- [Nope](https://github.com/EmiyaSyahriel/Nope) - The original project
+- [Nope](https://github.com/EmiyaSyahriel/Nope) - The original project, an Android version.
 
 ## How to build
 ### Pre-requisites
 - Gradle ( used 8.13, IDK which version is mininum )
-- Java ( JRE Ok, JDK recommended )
+- Java 8+ ( Used JDK 21 )
 - Maven ( used 3.9.9, IDK which version is mininum )
 - CLDC 1.1 and MIDP 2.1 Library
 
@@ -45,7 +45,7 @@ cd Nope-J2ME
 ```
 #### IDE way ( Used IntelliJ IDEA )
 - Open the directory as Project
-- Run the Gradle task `jar`
+- Run the Gradle task `build/jar`
 
 The jar file would be at `app/build/libs`
 
